@@ -1,0 +1,149 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+h1,h2,h3,h4,h5,h6,p,ul,li{
+    margin: 0px;
+    padding: 0px;
+}
+@font-face {
+    font-family: Outfit;
+    src: url(../font/Outfit-Regular.ttf);
+}
+.main{
+    background-image: url(../img/banner.png);
+    background-size: cover;
+    position: relative;
+    padding: 70px 0px;
+}
+.main::after{
+    content: "";
+    position: absolute;
+    top:0px;
+    left:0px;
+    background-color: #001b6185;
+    height: 100%;
+    width: 100%;
+}
+header{
+    position: relative;
+    z-index: 99;
+}
+.logo{
+    display: inline-block;
+}
+.logo img{
+    max-width: 150px;
+    display: inline-block;
+}
+.logoname{
+    display: inline-block;
+}
+.logoname h3{
+    font-size: 20px;
+    font-weight: 600;
+    display: inline-block;
+}
+.logoname h3 a{
+    display: inline-block;
+    color:#fff;
+    text-decoration: none;
+}
+.logoname h3 a span{
+    color:#9ADAFE;
+}
+.header-contact{
+    text-align: right;
+    padding: 40px 0px;
+}
+.header-contact ul li{
+    display: inline-block;
+    list-style: none;
+    color: #fff;
+    padding-left: 10px;
+}
+
+.banner{
+    position: relative;
+    z-index: 99;
+    padding: 70px 0px;
+}
+.banner_heading{
+    font-size: 72px;
+    font-weight: 700;
+    color:#fff;
+    text-transform: uppercase;
+}
+
+.banner_text p{
+    font-size: 22px;
+    color:#fff;
+    font-weight: 400;
+    max-width: 60%;
+    display: inline-block;
+    padding: 30px 0px;
+    line-height: 40px;
+}
+.social_links{
+    padding-top: 10px;
+}
+.social_links ul li{
+    display: inline-block;
+    list-style: none;
+    font-size: 18px;
+    margin: 0px 5px;
+}
+.social_links ul li a{
+    color: #fff;
+    height: 45px;
+    width: 45px;
+    line-height: 45px;
+    border: 1px solid #fff;
+    display: inline-block;
+    border-radius: 50%;
+    transition: ease-in-out .5s;
+}
+.social_links ul li a:hover{
+    background-color: #9ADAFE;
+    border-color: #9ADAFE;
+}
+.copywrite{
+    background-color: #0271BD;
+    padding: 20px 0;
+}
+.copywrite p{
+    font-size: 16px;
+    color: #fff;
+}
+@media(max-width:767.98px){
+    .logo{
+        display: block;
+        text-align: center;
+    }
+    .logoname{
+        display: block;
+        text-align: center;
+        padding-top: 10px;
+    }
+    .logoname h3{
+        display: block;
+    }
+    .header-contact{
+        text-align: center;
+        padding: 20px 0;
+    }
+    .header-contact ul li{
+        padding: 0px 10px;
+    }
+    .banner{
+        padding: 50px 0px 50px 0;
+    }
+    .banner_heading{
+        font-size: 58px;
+    }
+    .banner_text p{
+        max-width: 100%;
+        line-height: 30px;
+        font-size: 20px;
+    }
+}
